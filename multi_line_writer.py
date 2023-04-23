@@ -20,23 +20,23 @@ with open("mylife.txt", "w") as my_file:
         # Check if the user wants to input more lines
         more_lines = input("\033[95;1m" + "Are there more lines y/n? " + "\033[0m")
         # Check if the user input 'y'
-        if more_lines == "y":
+        if more_lines.lower() == "y":
             continue
         # Exit the loop if the user doesn't want to add more lines
-        elif more_lines == "n":
+        elif more_lines.lower() == "n":
             print("\n" + ":" * 50)
             print("\033[102;1m" + "(: Thank you for using the program! :)".center(50) + "\033[0m")
             print(":" * 50)
             break
         # Check if it is an invalid input
-        while more_lines != "y" and "n":
+        while more_lines.lower() != "y" and "n":
             print("INVALID INPUT. Please input only 'y' or 'n'.")
             more_lines = input("\033[95;1m" + "Are there more lines y/n? " + "\033[0m")
             # Check if the user input 'y'
-            if more_lines == "y":
+            if more_lines.lower() == "y":
                 continue
             # Exit the loop if the user doesn't want to add more lines
-            elif more_lines == "n":
+            elif more_lines.lower() == "n":
                 print("\n" + ":" * 50)
                 print("\033[102;1m" + "(: Thank you for using the program! :)".center(50) + "\033[0m")
                 print(":" * 50)
