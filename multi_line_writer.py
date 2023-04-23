@@ -8,5 +8,6 @@ with open("mylife.txt", "w") as my_file:
         user_input = input("Enter Line: ")
         # Write the line to the file
         my_file.write(user_input + "\n")
-# Check if the user wants to input more lines
+        # Check if the user wants to input more lines
+        more_lines = input("Are there more lines y/n? ")
 # Exit the loop if the user doesn't want to add more lines
