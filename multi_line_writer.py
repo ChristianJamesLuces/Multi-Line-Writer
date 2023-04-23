@@ -3,6 +3,7 @@
 # Open the file in write mode
 with open("mylife.txt", "w") as my_file:
 # Create a while loop with a True condition
+    while True:
 # Ask the input line from the user
 # Write the line to the file
 # Check if the user wants to input more lines
