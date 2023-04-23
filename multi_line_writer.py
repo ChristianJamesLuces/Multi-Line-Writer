@@ -10,10 +10,12 @@ with open("mylife.txt", "w") as my_file:
         my_file.write(user_input + "\n")
         # Check if the user wants to input more lines
         more_lines = input("Are there more lines y/n? ")
-        # Check if it is an invalid input
-        if more_lines != "y" and "n":
-            print("INVALID INPUT. Please input only 'y' or 'n'.")
         # Check if the user input 'y'
-        elif more_lines == "y":
+        if more_lines == "y":
             continue
+        elif more_lines == "n":
+            break
+        # Check if it is an invalid input
+        else:
+            print("INVALID INPUT. Please input only 'y' or 'n'.")
         # Exit the loop if the user doesn't want to add more lines
