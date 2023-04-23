@@ -29,7 +29,7 @@ with open("mylife.txt", "w") as my_file:
             print(":" * 50)
             break
         # Check if it is an invalid input
-        while more_lines.lower() != "y" and "n":
+        while more_lines.lower() not in ["y","n"]:
             print("INVALID INPUT. Please input only 'y' or 'n'.")
             more_lines = input("\033[95;1m" + "Are there more lines y/n? " + "\033[0m")
             # Check if the user input 'y'
