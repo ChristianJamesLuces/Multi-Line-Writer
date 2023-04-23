@@ -25,7 +25,7 @@ with open("mylife.txt", "w") as my_file:
         # Exit the loop if the user doesn't want to add more lines
         elif more_lines == "n":
             print("\n" + ":" * 50)
-            print("\033[101;1m" + "(: Thank you for using the program! :)".center(50) + "\033[0m")
+            print("\033[102;1m" + "(: Thank you for using the program! :)".center(50) + "\033[0m")
             print(":" * 50)
             break
         # Check if it is an invalid input
